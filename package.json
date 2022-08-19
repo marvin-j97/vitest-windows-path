@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test": "yarn test:mocha && yarn test:vitest",
+    "test:mocha": "nyc mocha && nyc report --exclude **/*.spec.js --report-dir .report_mocha --reporter json",
+    "test:vitest": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-istanbul": "0.22.1",
+    "mocha": "10.0.0",
+    "nyc": "15.1.0",
+    "vitest": "0.22.1"
+  },
+  "dependencies": {}
+}
