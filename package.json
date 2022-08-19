@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "yarn test:mocha && yarn test:vitest",
-    "test:mocha": "nyc mocha && nyc report --exclude **/*.spec.js --report-dir .report_mocha --reporter json",
+    "test:mocha": "nyc mocha && nyc report --exclude **/*.spec.js --report-dir .report_mocha --reporter json --reporter html",
     "test:vitest": "vitest run --coverage"
   },
   "devDependencies": {
