@@ -5,7 +5,7 @@ export default defineConfig({
     include: "test-vitest/**/*.spec.js",
     coverage: {
       provider: "istanbul",
-      reporter: "json",
+      reporter: ["json", "html"],
       reportsDirectory: ".report_vitest",
     },
   },
